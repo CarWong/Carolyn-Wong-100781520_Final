@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         sword.OnAttack();
         isAttacking = true;
 
-        Rigidbody enemyspawn = DuckPooler.instance.SpawnFromPool("Duck", spawnerPos.position).GetComponent<Rigidbody>();
+       // Rigidbody enemyspawn = DuckPooler.instance.SpawnFromPool("Duck", spawnerPos.position).GetComponent<Rigidbody>();
 
     }
 
