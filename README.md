@@ -32,5 +32,3 @@ The command design pattern will swap the commands of the mouse. Instead of the r
 
 ## Sound Management System:
 A sound management system would be able to play sounds depending on what happens in game. It would have to use the observer design pattern to know what's happening. For example if the player shoots a duck and a function that tracks if the duck is shot gets called, the method would notify the sound manager and it would play the sound(s) that are associated with the action. OnNotify, the sound manager would play the sound that's required. It would also use the singleton design pattern becuase there will only be one sound manager. Each object will use the one sound manager.
-
-## Note:
