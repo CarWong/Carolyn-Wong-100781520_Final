@@ -8,7 +8,7 @@
 - ESC to quit game
 
 ## Build:
-You can fine the exe file in the published release.
+The build is in the release.
 
 ## Scripts:
 - EnemyController.cs : used to control enemy's actions such as patrolling and attacking
