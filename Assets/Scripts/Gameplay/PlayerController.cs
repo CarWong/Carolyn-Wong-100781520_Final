@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     Vector3 cameraRotation;
     PlayerSword sword;
 
+    public Transform spawnerPos;
+
     // Player animator variables
     private Animator animator;
     private bool isWalking = false;
@@ -84,6 +86,9 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         sword.OnAttack();
         isAttacking = true;
+
+        Rigidbody enemyspawn = DuckPooler.instance.SpawnFromPool("Duck", spawnerPos.position).GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
